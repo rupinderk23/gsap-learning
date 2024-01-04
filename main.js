@@ -5,7 +5,7 @@ gsap.registerPlugin(ScrollTrigger);
 const locoScroll = new LocomotiveScroll({
 el: document.querySelector(".smooth-scroll"),
     smooth: true,
-    multiplier: 1.5
+    multiplier: 1
 });
 // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
 locoScroll.on("scroll", ScrollTrigger.update);
@@ -28,6 +28,7 @@ ScrollTrigger.defaults({ scroller: ".smooth-scroll" });
 // --- SETUP END ---
   
 
+// scroll trigger start
 
 ScrollTrigger.matchMedia({
     // desktop
@@ -77,15 +78,14 @@ ScrollTrigger.matchMedia({
         },"cookism")
     }
 })
-
-// smooth scroll
-
   
+// scroll trigger start
 
 // scroll magic - move to next section on mousewheel
 
 // var ctrl = new ScrollMagic.Controller({   
 // });
+
 // This each sets the animation
 // $('.slide').each(function(index,element) {  
   
@@ -114,6 +114,7 @@ ScrollTrigger.matchMedia({
 //         .addTo(ctrl); // scene end
 
 // }); 
+
 //slide each
 
 // scroll magic end
